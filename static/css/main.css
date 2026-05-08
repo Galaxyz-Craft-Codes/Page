@@ -72,6 +72,7 @@ a.button {
     border-bottom: 1px solid gray;
 }
 .imagesct {
+    position: relative;
     background-image: repeating-linear-gradient(
         to top,
         transparent,
@@ -86,6 +87,7 @@ a.button {
     height: 900px;
 }
 .imagesct img {
+    position: absolute;
     text-align: center;
     border-radius: 5px;
     width: 30%;
@@ -97,15 +99,17 @@ a.button {
     text-align: center;
 }
 .imagesct .i1 {
-    margin-bottom: 150px !important;
+    top: 150px;
 }
 .imagesct .i2 {
-    margin-bottom: 200px !important;
+    top: 100px;
+    left: 33vw;
 }
 .imagesct .i3 {
-    margin-top: 100px !important;
+    top: 150px;
     -webkit-mask-image: linear-gradient(to bottom, black 5%, transparent 100%);
     mask-image: linear-gradient(to bottom, black 10%, transparent 100%);
+    left: 66vw;
 }
 .imagesct img:hover {
     transition: all 1s ease-in-out;
@@ -126,6 +130,9 @@ a.button {
     .logo p {
         display: none;
     }
+    .i1, .i2, .i3 {
+        margin-top: 100px !important;
+    } 
 }
 .button.blueclass {
     background-color: blue;
