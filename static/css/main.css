@@ -17,6 +17,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+
 .root {
     padding: 5px;
     display: flex;
@@ -56,11 +57,11 @@ a.button {
     color: white;
 }
 #links {
-    padding: 10px;
+    padding: 20px;
     background-color: rgba(0, 0, 185, 0.768);
     color: white;
     width: 100%;
-    height: 200px;
+    height: 300px;
     z-index: 999; 
 }
 #links a {
@@ -74,26 +75,82 @@ a.button {
     background-image: repeating-linear-gradient(
         to top,
         transparent,
-        black,
-        black,
-        black,
-        black,
+        rgba(0, 0, 0, 0.95),
+        rgba(0, 0, 0, 0.95),
+        rgba(0, 0, 0, 0.95),
+        rgba(0, 0, 0, 0.95),
+        transparent,
         transparent
     );
     padding: 5px;
-    height: 700px;
+    height: 900px;
 }
 .imagesct img {
     text-align: center;
     border-radius: 5px;
-    width: 32%;
+    width: 30%;
     padding: 1%;
-    -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 30%, transparent 100%);
     mask-image: linear-gradient(to bottom, black 30%, transparent 100%);
-}
-.imagesct img.i1 {
-    margin-top: 50px;
 }
 .imagesct .text {
     text-align: center;
+}
+.imagesct .i1 {
+    margin-bottom: 150px !important;
+}
+.imagesct .i2 {
+    margin-bottom: 200px !important;
+}
+.imagesct .i3 {
+    margin-top: 100px !important;
+    -webkit-mask-image: linear-gradient(to bottom, black 5%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 10%, transparent 100%);
+}
+.imagesct img:hover {
+    transition: all 1s ease-in-out;
+    filter: brightness(150%);
+}
+.contentext {
+  background-color: rgb(32, 32, 32);
+  border: 6px double rgb(64, 64, 64); 
+  padding: 15px;
+  text-align: center;
+  margin: auto;
+  width: 55vw;
+}
+.phone.clear {
+    display: none;
+}
+@media (max-width: 480px) {
+    .logo p {
+        display: none;
+    }
+}
+.button.blueclass {
+    background-color: blue;
+    padding: 10px;
+    font-size: 30px;
+    animation: ociler-tam-cl 3s infinite;
+}
+@keyframes ociler-tam-cl {
+    0% {
+        background-color: blue;
+        padding: 10px;
+    }
+    50% {
+        background-color: rgb(52, 52, 255);
+        padding: 15px;
+    }
+    100% {
+        background-color: blue;
+        padding: 10px;
+    }
+}
+.linksd {
+    padding: 5px;
+    text-align: center;
+}
+.linksd * {
+    padding: 5px;
 }
