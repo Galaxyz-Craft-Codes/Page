@@ -91,7 +91,7 @@ a.button {
     text-align: center;
     border-radius: 5px;
     width: 30%;
-    padding: 1%;
+    padding: 1.5%;
     -webkit-mask-image: linear-gradient(to bottom, black 30%, transparent 100%);
     mask-image: linear-gradient(to bottom, black 30%, transparent 100%);
 }
@@ -99,14 +99,14 @@ a.button {
     text-align: center;
 }
 .imagesct .i1 {
-    top: 150px;
+    top:200px;
 }
 .imagesct .i2 {
-    top: 100px;
+    top: 150px;
     left: 33vw;
 }
 .imagesct .i3 {
-    top: 150px;
+    top: 200px;
     -webkit-mask-image: linear-gradient(to bottom, black 5%, transparent 100%);
     mask-image: linear-gradient(to bottom, black 10%, transparent 100%);
     left: 66vw;
