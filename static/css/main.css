@@ -12,12 +12,15 @@ body {
     image-rendering: pixelated; 
     image-rendering: crisp-edges;
     color: white;
+    font-size: 130%;
     overflow-x:hidden;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
-
+h1, h2, h3, h4 {
+    font-weight: normal;
+}
 .root {
     padding: 5px;
     display: flex;
@@ -84,7 +87,7 @@ a.button {
         transparent
     );
     padding: 5px;
-    height: 900px;
+    height: 1000px;
 }
 .imagesct img {
     position: absolute;
@@ -160,4 +163,10 @@ a.button {
 }
 .linksd * {
     padding: 5px;
+}
+.textst {
+    background-color: rgb(13, 13, 13);
+    width: fit-content;
+    padding: 10px;
+    border-radius: 5px;
 }
