@@ -61,33 +61,43 @@ a.button {
 }
 #links {
     padding: 20px;
-    background-color: rgba(0, 0, 185, 0.768);
+    background-color: rgba(0, 0, 97, 0.997);
     color: white;
-    width: 100%;
+    width: 90%;
     height: 300px;
+    margin: auto;
     z-index: 999; 
+    border-radius: 5px;
 }
 #links a {
-    color: orange;
+    color: rgb(0, 225, 255);
     text-decoration: none;
-    padding: 0.5px;
-    margin: 20px;
+    padding: 0.3px;
+    margin: 15px;
+    margin-bottom: 20px;
     border-bottom: 1px solid gray;
+}
+#links .line.h {
+    height: 1px;
+    width: 100%;
+    border-radius: 50%;
+    background-color: rgba(201, 201, 201, 0.633);
 }
 .imagesct {
     position: relative;
     background-image: repeating-linear-gradient(
         to top,
         transparent,
-        rgba(0, 0, 0, 0.95),
-        rgba(0, 0, 0, 0.95),
-        rgba(0, 0, 0, 0.95),
-        rgba(0, 0, 0, 0.95),
+        rgba(0, 0, 0, 0.975),
+        rgba(0, 0, 0, 0.975),
+        rgba(0, 0, 0, 0.975),
+        rgba(0, 0, 0, 0.975),
         transparent,
         transparent
     );
     padding: 5px;
-    height: 1000px;
+    width: 100vw;
+    height: 1850px;
 }
 .imagesct img {
     position: absolute;
@@ -95,6 +105,7 @@ a.button {
     border-radius: 5px;
     width: 30%;
     padding: 1.5%;
+    top: 100px;
     -webkit-mask-image: linear-gradient(to bottom, black 30%, transparent 100%);
     mask-image: linear-gradient(to bottom, black 30%, transparent 100%);
 }
@@ -102,19 +113,19 @@ a.button {
     text-align: center;
 }
 .imagesct .i1 {
-    top:200px;
+    top: 400px;
 }
 .imagesct .i2 {
-    top: 150px;
+    top: 350px;
     left: 33vw;
 }
 .imagesct .i3 {
-    top: 200px;
+    top: 400px;
     -webkit-mask-image: linear-gradient(to bottom, black 5%, transparent 100%);
     mask-image: linear-gradient(to bottom, black 10%, transparent 100%);
     left: 66vw;
 }
-.imagesct img:hover {
+.imagest img:hover {
     transition: all 1s ease-in-out;
     filter: brightness(150%);
 }
@@ -164,9 +175,63 @@ a.button {
 .linksd * {
     padding: 5px;
 }
+#sectext {
+    display: flex;
+    position: relative;
+    justify-self: center;
+}
 .textst {
-    background-color: rgb(13, 13, 13);
+    background-color: rgb(22, 22, 22);
     width: fit-content;
     padding: 10px;
+    justify-self: center;
     border-radius: 5px;
+    margin: 10px;
+}
+.textst.img img {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+}
+.flex {display: flex;}
+.flex * { margin: 2px; align-self: center; }
+#sectext {
+    display: block;
+}
+#sectext * { justify-self: center; }
+.voice { height: 200px; width: 500px; }
+.sbt {
+    position: relative;
+    margin: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    justify-items: left;
+    border-radius: 15px;
+}
+.sbt .text {
+    position: absolute;
+    z-index: 35;
+    justify-self: left !important;
+    padding: 15px;
+    padding-bottom: 25px;
+    width: 100px;
+    top: -20px;
+    background-image: linear-gradient(to bottom, black 20%, transparent);
+    width: 100%;
+    color: white;
+}
+.sbt .text * { justify-self: left !important; margin-bottom: -10px; padding-top: 15px;}
+.sbt img {
+    position: absolute;
+    top: 0;
+    border-radius: 15px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.dsc { width: 400px; height: 400px; }
+.gia { width: 500px; height: 200px;}
+.empire-space {
+    margin-bottom: 750px;
 }
